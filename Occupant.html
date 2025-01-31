@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHôtel Occupant</title>
+
+    <!-- front awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!--custom css file link -->
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/Reservation.css">
+    <link rel="stylesheet" href="css/Occupant.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <script src="Acceui.js"></script>
+</head>
+
+<body>
+  <!--header section--> 
+  <section class="header">
+    <div class="flex">
+      <a href="#home" class="logo"><img src="img/bg-img/Logo.png" alt="oups" id="logo"></a>
+     
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+          <a href="index.html">Accueil</a>
+          <a href="About.html">À propos</a>
+          <a href="http://localhost/Souweba/php/get_chambre.php">Réservation</a>
+          <a href="Occupant.html">Occupant</a>
+          <a href="Contact.html">Contact</a>
+      </div>
+  </div>
+    <nav class="navbar">
+      <a href="index.html">Acceuil</a>
+      <a href="About.html">A propos</a>
+      <a href="http://localhost/Souweba/php/get_chambre.php">Reservation</a>
+      <a href="#Occupant">Occupant</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </section> 
+<br>
+<!-- Banner Section -->
+<div class="banner">
+  <div class="content">
+    <h2>Réservez votre séjour sur ZenHôtel</h2>
+    <p>1 480 086 chambres dans le monde vous attendent !</p>
+    <form action="http://localhost/Souweba/php/get_chambre.php" method="get">
+      <label for="emplacement">Emplacement :</label>
+      <input type="text" id="emplacement" placeholder="Où allez-vous ?">
+      <label for="arrivée">Arrivée :</label>
+      <input type="date" id="arrivée">
+      <label for="départ">Départ :</label>
+      <input type="date" id="départ">
+      <label for="invités">Invités :</label>
+      <input type="number" id="invités" min="1" value="1">
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</div>
+<h2>Occupants</h2>
+</h2>
+<div class="row">
+ <div class="col-md-6">
+  <h5>
+   Adultes
+  </h5>
+  <ul class="list-group">
+   <li class="list-group-item">
+    Nom: Dupont, Prénom: Jean
+   </li>
+   <li class="list-group-item">
+    Nom: Martin, Prénom: Sophie
+   </li>
+   <li class="list-group-item">
+    Nom: Durand, Prénom: Pierre
+   </li>
+  </ul>
+ </div>
+ <div class="col-md-6">
+  <h5>
+   Enfants
+  </h5>
+  <ul class="list-group">
+   <li class="list-group-item">
+    Nom: Dupont, Prénom: Marie
+   </li>
+   <li class="list-group-item">
+    Nom: Martin, Prénom: Lucas
+   </li>
+  </ul>
+ </div>
+</div>
+</section>
+<section id="personnel">
+<h2 class="section-title">
+ Personnel
+</h2>
+<ul class="list-group">
+ <li class="list-group-item">
+  Nom: Lefevre, Prénom: Claire (Directeur)
+ </li>
+ <li class="list-group-item">
+  Nom: Bernard, Prénom: Paul
+ </li>
+ <li class="list-group-item">
+  Nom: Moreau, Prénom: Julie
+ </li>
+ <li class="list-group-item">
+  Nom: Petit, Prénom: Marc
+ </li>
+</ul>
+</section>
+<section id="reservations">
+<h2 class="section-title">
+ Réservations
+</h2>
+<table class="table table-striped">
+ <thead>
+  <tr>
+   <th scope="col">
+    Chambre
+   </th>
+   <th scope="col">
+    Occupant
+   </th>
+   <th scope="col">
+    Date d'arrivée
+   </th>
+   <th scope="col">
+    Date de départ
+   </th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>
+    101
+   </td>
+   <td>
+    Jean Dupont
+   </td>
+   <td>
+    01/10/2023
+   </td>
+   <td>
+    05/10/2023
+   </td>
+  </tr>
+  <tr>
+   <td>
+    102
+   </td>
+   <td>
+    Sophie Martin
+   </td>
+   <td>
+    02/10/2023
+   </td>
+   <td>
+    06/10/2023
+   </td>
+  </tr>
+  <tr>
+   <td>
+    103
+   </td>
+   <td>
+    Pierre Durand
+   </td>
+   <td>
+    03/10/2023
+   </td>
+   <td>
+    07/10/2023
+   </td>
+  </tr>
+ </tbody>
+</table>
+</section>
+<button class="reserve"><a href="http://localhost/Souweba/php/get_Occupant.php">Afficher les reservations</a></button>
+<section id="chiffre-affaires">
+<h2 class="section-title">
+Chiffre d'affaires
+</h2>
+<form>
+ <div class="mb-3">
+  <label class="form-label" for="startDate">
+   Date de début
+  </label>
+  <input class="form-control" id="startDate" type="date"/>
+ </div>
+ <div class="mb-3">
+  <label class="form-label" for="endDate">
+   Date de fin
+  </label>
+  <input class="form-control" id="endDate" type="date"/>
+ </div>
+ <button class="btn btn-primary" type="submit">
+  Calculer
+ </button>
+</form>
+</section>
+<footer>
+  <div class="footer-content">
+      <div class="footer-section branding">
+          <h1><img src="img/bg-img/Logo.png" alt="" width="95%" top="-154px"></h1>
+          <p>&copy; 2025 Tous droits réservés | Ce modèle est réalisé avec ♡ par le groupe 7.</p>
+          <div class="social-icons">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-global-fill"></i></a>
+              <a href="#"><i class="ri-behance-fill"></i></a>
+          </div>
+      </div>
+      <div class="footer-section quick-links">
+          <h2>Liens rapides</h2>
+          <ul>
+              <li><a href="About.html">A propos de ZenHôtel</a></li>
+              <li><a href="http://localhost/Souweba/php/get_chambre.php">Vos chambres</a></li>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-section reservations">
+          <h2>Reservations</h2>
+          <p>Telephone:+228 90 12 12 12</p>
+          <p>Skype: ZenHôtel</p>
+          <p>Email: ZenHôtel@gmail.com</p>
+      </div>
+      <div class="footer-section location">
+          <h2>Notre Localisation</h2>
+          <p>Agoe Lome en face d'avedji</p>
+          <form>
+              <input type="email" placeholder="Votre Address Email ">
+              <button type="submit"><i class="ri-send-plane-fill"></i></button>
+          </form>
+      </div>
+  </div>
+</footer>

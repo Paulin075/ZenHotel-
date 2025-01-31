@@ -1,0 +1,16 @@
+.reserve{
+    background-color:#283b6d;
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 1px;
+    margin-left: 45%;
+    width: 15%;
+    padding: 1%;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color: #283b6d;
+}

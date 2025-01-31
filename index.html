@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHôtel</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Section Header -->
+    <section class="header">
+        <div class="flex">
+            <a href="#home" class="logo">
+                <img src="img/bg-img/Logo.png" alt="Logo ZenHôtel" id="logo">
+            </a>
+        </div>
+ <!-- Menu déroulant à gauche -->
+ <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <a href="#home">Accueil</a>
+        <a href="About.html">À propos</a>
+        <a href="http://localhost/Souweba/php/get_chambre.php">Réservation</a>
+        <a href="http://localhost/Souweba/php/get_Occupant.php">Occupant</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</div>
+        <nav class="navbar">
+            <a href="#home">Accueil</a>
+            <a href="About.html">À propos</a>
+            <a href="http://localhost/Souweba/php/get_chambre.php">Réservation</a>
+            <a href="Occupant.html">Occupant</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </section>
+
+    <br>
+
+    <!-- Section Bannière -->
+    <div class="banner">
+        <div class="content">
+            <h2>Réservez votre séjour sur ZenHôtel</h2>
+            <p>1 480 086 chambres dans le monde vous attendent !</p>
+            <form action="http://localhost/Souweba/php/get_chambre.php" method="get">
+                <label for="emplacement">Emplacement :</label>
+                <input type="text" id="emplacement" placeholder="Où allez-vous ?">
+
+                <label for="arrivee">Arrivée :</label>
+                <input type="date" id="arrivee">
+
+                <label for="depart">Départ :</label>
+                <input type="date" id="depart">
+
+                <label for="invites">Invités :</label>
+                <input type="number" id="invites" min="1" value="1">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Présentation de ZenHôtel</h1>
+        <div class="destinations">
+            <div class="destination">
+                <img src="img/bg-img/23.jpg" alt="Espagne">
+                <p>Piscine</p>
+            </div>
+            <div class="destination">
+                <img src="img/bg-img/24.jpg" alt="Londres">
+                <p>Restaurant</p>
+            </div>
+            <div class="destination">
+                <img src="img/bg-img/25.jpg" alt="Croatie">
+                <p>Piscine avec vue sur couché du soleil</p>
+            </div>
+            <div class="destination">
+                <img src="img/bg-img/26.jpg" alt="Bratislava">
+                <p>Grand salon</p>
+            </div>
+            <div class="destination">
+                <img src="img/bg-img/27.jpg" alt="Lisbonne">
+                <p>Salle de Gym</p>
+            </div>
+            <div class="destination">
+                <img src="img/bg-img/28.jpg" alt="Copenhague">
+                <p>Piscine avec vue sur levé du soleil</p>
+            </div>
+        </div>
+        <h2>ESPACE CLIENTS</h2>
+        <div class="hotels">
+            <div class="hotel">
+                <img src="img/bg-img/29.jpg" alt="Hôtel Soho Londres">
+                <p>Salle a Mangé </p>
+                <p>1er Etage</p>
+                <p>9.6</p>
+            </div>
+            <div class="hotel">
+                <img src="img/bg-img/30.jpg" alt="Hôtel Nørrebro">
+                <p>Chambre avec 1 lits</p>
+                <p>CHAMBRE</p>
+                <p>9.6</p>
+            </div>
+            <div class="hotel">
+                <img src="img/bg-img/31.jpg" alt="Hôtel Sunset Plaza">
+                <p>Suite 4 étoile</p>
+                <p>CHAMBRE SUITE</p>
+                <p>9.8</p>
+            </div>
+            <div class="hotel">
+                <img src="img/bg-img/31.jpg" alt="Hôtel Three Quarters">
+                <p>Suite 4 étoile</p>
+                <p>CHAMBRE SUITE</p>
+                <p>9.5</p>
+            </div>
+            <div class="hotel">
+                <img src="img/bg-img/33.jpg" alt="Suites Surf'n'Turf">
+                <p>Salle d'attente</p>
+                <p>Ré de chaussé</p>
+                <p>9.5</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="Acceui.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+.contact-form, .contact-details {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;  /* Centrer les éléments avec margin auto */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    clear: both;  /* Éviter les chevauchements */
+}
+
+.contact-form h2, .contact-details h2 {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form textarea, .contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-details {
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form, .contact-details {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .contact-details p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-details {
+        position: static;
+        margin: 20px 0;
+    }
+    .contact-details p {
+        margin-top: 0;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;  /* Ajouter de l'espace en haut du footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+footer form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+footer form button:hover {
+    background-color: #45a049;
+}

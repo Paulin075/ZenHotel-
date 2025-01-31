@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHôtel About</title>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Remix Icon CDN Link (pour les icônes de médias sociaux) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS File Links -->
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/About.css">
+    <script src="Acceui.js"></script>
+</head>
+
+<body>
+  <!-- Header Section --> 
+  <section class="header">
+    <div class="flex">
+      <a href="#home" class="logo"><img src="img/bg-img/Logo.png" alt="oups" id="logo"></a>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.html">Accueil</a>
+            <a href="About.html">À propos</a>
+            <a href="http://localhost/Souweba/php/get_chambre.php">Réservation</a>
+            <a href="http://localhost/Souweba/php/get_Occupant.php">Occupant</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Acceuil</a>
+      <a href="#About">A propos</a>
+      <a href="get_chambre.php">Reservation</a>
+      <a href="get_Occupant.php">Occupant</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </section> 
+  <br>
+  <!-- Banner Section -->
+<div class="banner">
+  <div class="content">
+    <h2>Réservez votre séjour sur ZenHôtel</h2>
+    <p>1 480 086 chambres dans le monde vous attendent !</p>
+    <form action="http://localhost/Souweba/php/get_chambre.php" method="get">
+      <label for="emplacement">Emplacement :</label>
+      <input type="text" id="emplacement" placeholder="Où allez-vous ?">
+      <label for="arrivée">Arrivée :</label>
+      <input type="date" id="arrivée">
+      <label for="départ">Départ :</label>
+      <input type="date" id="départ">
+      <label for="invités">Invités :</label>
+      <input type="number" id="invités" min="1" value="1">
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</div>
+  
+  <!-- About Section -->
+  <div class="stats">
+    <div class="stat">
+        <i class="fas fa-hotel" id="icone"></i>
+        <p class="number">1234</p>
+        <p>chambres</p>
+    </div>
+    <div class="stat">
+        <i class="fas fa-users" id="icone"></i>
+        <p class="number">1234</p>
+        <p>Satisfait</p>
+    </div>
+    <div class="stat">
+        <i class="fas fa-user-circle" id="icone"></i>
+        <p class="number">1234</p>
+        <p>Clients</p>
+    </div>
+  </div>
+  
+  <div class="images">
+    <img src="img/bg-img/12.jpg" alt="Image 1">
+    <img src="img/bg-img/13.jpg" alt="Image 2">
+    <img src="img/bg-img/14.jpg" alt="Image 3">
+    <img src="img/bg-img/15.jpg" alt="Image 4">
+  </div>
+
+  <a href="#" class="explore-more">Explorer Plus</a>
+
+  <!-- Profile Cards -->
+  <main>
+    <div class="profile-card">
+        <img src="img/bg-img/16.jpg" alt="Profile Picture">
+        <h2>Alfredo Linguini</h2>
+        <p>Chef cuisinier</p>
+        <div class="social-icons">
+            <a href="#">F</a>
+            <a href="#">T</a>
+            <a href="#">I</a>
+        </div>
+    </div>
+    
+    <div class="profile-card">
+        <img src="img/bg-img/17.jpg" alt="Profile Picture">
+        <h2>Kokou Agbonon</h2>
+        <p>Chef restaurant</p>
+        <div class="social-icons">
+            <a href="#">F</a>
+            <a href="#">T</a>
+            <a href="#">I</a>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="img/bg-img/18.jpg" alt="Profile Picture">
+        <h2>Jean marc</h2>
+        <p>Porteur de bagage</p>
+        <div class="social-icons">
+            <a href="#">F</a>
+            <a href="#">T</a>
+            <a href="#">I</a>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="img/bg-img/19.jpg" alt="Profile Picture">
+        <h2>Kingsmane</h2>
+        <p>Major d'homme</p>
+        <div class="social-icons">
+            <a href="#">F</a>
+            <a href="#">T</a>
+            <a href="#">I</a>
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  
+</body>
+</html>

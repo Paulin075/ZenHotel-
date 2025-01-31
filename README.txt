@@ -1,0 +1,1 @@
+Pour que ce site fonctionne correctement, vous devez ajouter la base de données ZenHotel à votre serveur PHP local. Cela permettra d'assurer la bonne gestion et l'affichage des données nécessaires pour l'application.

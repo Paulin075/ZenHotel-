@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHôtel Réservation</title>
+
+    <!-- front awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--custom css file link -->
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reservartion.css">
+    <script src="Acceui.js"></script>
+</head>
+<body>
+    <!--header section--> 
+    <section class="header">
+        <div class="flex">
+            <a href="#home" class="logo"><img src="img/bg-img/Logo.png" alt="oups" id="logo"></a>
+
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Accueil</a>
+                <a href="About.html">À propos</a>
+                <a href="http://localhost/Souweba/php/get_chambre.php">Réservation</a>
+                <a href="Occupant.html">Occupant</a>
+                <a href="http://localhost/Souweba/php/get_Occupant.php">Contact</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="About.html">A propos</a>
+            <a href="http://localhost/Souweba/php/get_chambre.php">Reservation</a>
+            <a href="Occupant.html">Occupant</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </section> 
+    <br>
+<!-- Banner Section -->
+<div class="banner">
+    <div class="content">
+      <h2>Réservez votre séjour sur ZenHôtel</h2>
+      <p>1 480 086 chambres dans le monde vous attendent !</p>
+      <form action="http://localhost/Souweba/php/get_chambre.php" method="get">
+        <label for="emplacement">Emplacement :</label>
+        <input type="text" id="emplacement" placeholder="Où allez-vous ?">
+        <label for="arrivée">Arrivée :</label>
+        <input type="date" id="arrivée">
+        <label for="départ">Départ :</label>
+        <input type="date" id="départ">
+        <label for="invités">Invités :</label>
+        <input type="number" id="invités" min="1" value="1">
+        <button type="submit">Rechercher</button>
+      </form>
+    </div>
+  </div>
+    <div class="form-container">
+        <h2>Réservez votre séjour</h2>
+        <form action="submit_reservation.php" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Type de Personne :</label>
+                <select id="type" name="type" required>
+                    <option value="">Sélectionner le type de personne</option>
+                    <option value="adulte">Adulte</option>
+                    <option value="enfant">Enfant</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date_arrivee">Date d'arrivée :</label>
+                <input type="date" id="date_arrivee" name="date_arrivee" required>
+            </div>
+            <div class="form-group">
+                <label for="date_depart">Date de départ :</label>
+                <input type="date" id="date_depart" name="date_depart" required>
+            </div>
+            <div class="form-group">
+                <label for="chambre_id">ID de la chambre :</label>
+                <select id="chambre_id" name="chambre_id" required>
+                    <option value="">Sélectionnez une chambre</option>
+                    <option value="1">Chambre 101</option>
+                    <option value="2">Chambre 102</option>
+                    <option value="3">Chambre 103</option>
+                    <option value="3">Chambre 104 </option>
+                    <option value="3">Chambre 105</option>
+                    <option value="3">Chambre 106</option>
+                    <option value="3">Chambre 107</option>
+                    <option value="3">Chambre 108</option>
+                    <option value="3">Chambre 109</option>
+                    <option value="3">Chambre 110</option>
+                    <option value="3">Chambre 111</option>
+                    <option value="3">Chambre 112</option>
+                    <option value="3">Chambre 113</option>
+                    <option value="3">Chambre 114</option>
+                    <option value="3">Chambre 115</option>
+                    <option value="3">Chambre 116</option>
+                    <option value="3">Chambre 117</option>
+                    <option value="3">Chambre 118</option>
+                    <option value="3">Chambre 119</option>
+                    <option value="3">Chambre 120</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Réserver</button>
+        </form>
+    </div>
+</body>
+</html>

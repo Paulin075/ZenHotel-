@@ -1,0 +1,85 @@
+.rooms {
+    text-align: center;
+    
+}
+
+.room {
+    border: 0px solid #ccc;
+    width: 45%;
+    margin: 25px;
+    padding: 9px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.room img {
+    width: 100%;
+}
+
+.room h4 {
+    margin-top: 10px;
+}
+
+#chambres p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#chambres button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px; height: auto;
+}
+.card button{
+    background-color: #4CAF50;
+    width: 125px;
+}
+.card button :hover{
+    background-color: #283b6d;
+    color: white;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #283b6d(0,0,0,0.2);
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 0 22%; /* 22% pour ajuster la largeur et avoir 4 éléments par ligne */
+    margin: 0.5%;
+}
+
+.list-group-item:hover {
+    background-color:#283b6d;
+    color: #283b6d;
+}
+.table th {
+    background-color: #283b6d;
+    color: #fff;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+.btn-primary:hover {
+    background-color: #283b6d;
+    border-color: #283b6d;
+}
+#test {
+     width: 300px; height: 400px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHôtel Contact</title>
+
+    <!-- front awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!--custom css file link -->
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <script src="Acceui.js"></script>
+
+</head>
+
+<body>
+  <!--header section--> 
+  <section class="header">
+    <div class="flex">
+      <a href="index.html" class="logo"><img src="img/bg-img/Logo.png" alt="oups" id="logo"></a>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.html">Accueil</a>
+            <a href="About.html">À propos</a>
+            <a href="http://localhost/Souweba/php/get_chambre.php">Réservation</a>
+            <a href="http://localhost/Souweba/php/get_Occupant.php">Occupant</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="About.html">A propos</a>
+      <a href="http://localhost/Souweba/php/get_chambre.php">Reservation</a>
+      <a href="Occupant.html">Occupant</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+  </section> 
+<br>
+<!-- Banner Section -->
+<div class="banner">
+    <div class="content">
+      <h2>Réservez votre séjour sur ZenHôtel</h2>
+      <p>1 480 086 chambres dans le monde vous attendent !</p>
+      <form action="http://localhost/Souweba/php/get_chambre.php" method="get">
+        <label for="emplacement">Emplacement :</label>
+        <input type="text" id="emplacement" placeholder="Où allez-vous ?">
+        <label for="arrivée">Arrivée :</label>
+        <input type="date" id="arrivée">
+        <label for="départ">Départ :</label>
+        <input type="date" id="départ">
+        <label for="invités">Invités :</label>
+        <input type="number" id="invités" min="1" value="1">
+        <button type="submit">Rechercher</button>
+      </form>
+    </div>
+  </div>
+</div>
+    <section class="contact-form">
+        <h2>ZenHôtel</h2>
+        <h2>Vos sugestion</h2>
+        <form action="#">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Subject">
+
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+    <section class="contact-details">
+        <h2>Contact Details</h2>
+        <i class="ri-home-4-fill"></i><p><strong>Address:</strong><br> 
+        Agoe Lome en face ESGIS Avédji</p>
+        
+        <i class="ri-phone-line"></i><p><strong>Phone:</strong><br>
+        +228 96-10-45-65 Tous les jours sauf Dimanches </p>
+        
+        <i class="ri-mail-ai-line"></i><p><strong>Email:</strong><br>
+        ZenHôtel@gmail.com<br>
+        24h/24h Nous somme là <p>
+    </section>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section branding">
+              <h1><img src="img/bg-img/Logo.png" alt="" width="95%" top="-154px"></h1>
+              <p>&copy; 2025 Tous droits réservés | Ce modèle est réalisé avec ♡ par le groupe 7.</p>
+              <div class="social-icons">
+                  <a href="#"><i class="ri-facebook-fill"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                  <a href="#"><i class="ri-global-fill"></i></a>
+                  <a href="#"><i class="ri-behance-fill"></i></a>
+              </div>
+          </div>
+          <div class="footer-section quick-links">
+              <h2>Liens rapides</h2>
+              <ul>
+                  <li><a href="About.html">A propos de ZenHôtel</a></li>
+                  <li><a href="http://localhost/Souweba/php/get_chambre.php">Vos chambres</a></li>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section reservations">
+              <h2>Reservations</h2>
+              <p>Telephone:+228 90 12 12 12</p>
+              <p>Skype: ZenHôtel</p>
+              <p>Email: ZenHôtel@gmail.com</p>
+          </div>
+          <div class="footer-section location">
+              <h2>Notre Localisation</h2>
+              <p>Agoe Lome en face d'avedji</p>
+              <form>
+                  <input type="email" placeholder="Votre Address Email ">
+                  <button type="submit"><i class="ri-send-plane-fill"></i></button>
+              </form>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
+
